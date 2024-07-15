@@ -10,21 +10,31 @@
 
 <body>
   <div class="relative w-full h-screen overflow-hidden" id="app">
-    <div class="absolute top-0 w-full flex items-center justify-between py-2 px-6 bg-black text-white font-semibold">
-      <a class="underline underline-offset-2" href="https://ui.lndev.me">
-        Code by LN
-      </a>
-      <a class="underline underline-offset-2" href="https://github.com/ln-dev7/">
-        GitHub
-      </a>
-      <a class="underline underline-offset-2" href="#">
-        Figma
-      </a>
-    </div>
-    <div class="w-full h-full flex items-center justify-center p-4">
-      <h1 className="text-3xl font-bold underline">
-        FUN ANIMATION TEMPLATE
-      </h1>
+    <div class="w-full h-full flex flex-col items-center gap-12 justify-center p-4">
+      <div class="relative flex items-center gap-6">
+        <div class="progress bg-green-500 h-5 w-5 absolute -left-1.5 rounded-full"></div>
+        <div class="dot bg-white w-2 h-2 rounded-full z-[2] dot"></div>
+        <div class="dot bg-slate-300 w-2 h-2 rounded-full z-[2] dot"></div>
+        <div class="dot bg-slate-300 w-2 h-2 rounded-full z-[2] dot"></div>
+      </div>
+      <div class="flex items-center justify-between w-96 gap-2">
+        <button class="bg-slate-100 rounded-full font-semibold text-slate-900 h-14 w-[120px] -translate-x-[120px] shrink-0 flex items-center justify-center opacity-0 back">
+          <span>Back</span>
+        </button>
+        <button class="bg-blue-600 rounded-full font-semibold text-white w-96 h-14 -translate-x-[128px] shrink-0 flex items-center justify-center continue">
+          <div class="flex flex-col items-center justify-start h-6 overflow-hidden">
+            <span>Continue</span>
+            <span class="flex items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              Finish
+            </span>
+          </div>
+        </button>
+      </div>
     </div>
   </div>
   <script type="module" src="/main.js"></script>
